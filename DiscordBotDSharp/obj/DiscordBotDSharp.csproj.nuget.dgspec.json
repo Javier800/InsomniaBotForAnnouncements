@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\UnityProyectos\\BotDiscordNoUnity\\DiscordBotDSharp\\DiscordBotDSharp.csproj": {}
+  },
+  "projects": {
+    "F:\\UnityProyectos\\BotDiscordNoUnity\\DiscordBotDSharp\\DiscordBotDSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\UnityProyectos\\BotDiscordNoUnity\\DiscordBotDSharp\\DiscordBotDSharp.csproj",
+        "projectName": "DiscordBotDSharp",
+        "projectPath": "F:\\UnityProyectos\\BotDiscordNoUnity\\DiscordBotDSharp\\DiscordBotDSharp.csproj",
+        "packagesPath": "C:\\Users\\Javier\\.nuget\\packages\\",
+        "outputPath": "F:\\UnityProyectos\\BotDiscordNoUnity\\DiscordBotDSharp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Javier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "DSharpPlus": {
+              "target": "Package",
+              "version": "[3.2.3, )"
+            },
+            "DSharpPlus.CommandsNext": {
+              "target": "Package",
+              "version": "[3.2.3, )"
+            },
+            "DSharpPlus.Interactivity": {
+              "target": "Package",
+              "version": "[3.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

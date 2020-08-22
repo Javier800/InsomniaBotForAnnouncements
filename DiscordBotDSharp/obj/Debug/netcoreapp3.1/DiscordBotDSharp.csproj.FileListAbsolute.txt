@@ -1,0 +1,8 @@
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DiscordBotDSharp.exe
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.csprojAssemblyReference.cache
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.AssemblyInfoInputs.cache
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.AssemblyInfo.cs
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DSharpPlus.dll
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.csproj.CopyComplete
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DSharpPlus.CommandsNext.dll
