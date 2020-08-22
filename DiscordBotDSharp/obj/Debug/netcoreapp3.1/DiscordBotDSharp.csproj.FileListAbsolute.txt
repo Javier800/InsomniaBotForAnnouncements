@@ -6,3 +6,13 @@ F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DSh
 F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.csproj.CopyComplete
 F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DSharpPlus.CommandsNext.dll
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DiscordBotDSharp.deps.json
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DiscordBotDSharp.runtimeconfig.json
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DiscordBotDSharp.runtimeconfig.dev.json
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DiscordBotDSharp.dll
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DiscordBotDSharp.pdb
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\bin\Debug\netcoreapp3.1\DSharpPlus.Interactivity.dll
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.csproj.CoreCompileInputs.cache
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.dll
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.pdb
+F:\UnityProyectos\BotDiscordNoUnity\DiscordBotDSharp\obj\Debug\netcoreapp3.1\DiscordBotDSharp.genruntimeconfig.cache
