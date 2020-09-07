@@ -16,70 +16,7 @@ namespace DiscordBotDSharp.Commands {
 
     class FunCommands {
 
-        [Command("ping")]
-        [Description("Returns pong")]
-        public async Task Ping(CommandContext ctx) {
-            await ctx.Channel.SendMessageAsync("Pong").ConfigureAwait(false);
-        }
-
-        [Command("add")]
-        [Description("Add two numbers together")]
-        public async Task Add(
-            CommandContext ctx, 
-            [Description("First number")] int numberOne,
-            [Description("Second number")] int numberTwo) {
-            await ctx.Channel.
-                SendMessageAsync((numberOne+numberTwo).ToString()).
-                ConfigureAwait(false);
-        }
-
-        [Command("respondmessage")]
-        public async Task RespondMessage(CommandContext ctx) {
-            var interactivity = ctx.Client.GetInteractivityModule();
-
-            var message = await interactivity.WaitForMessageAsync(x => x.Channel == ctx.Channel && x.Author.Id == ctx.Member.Id).ConfigureAwait(false);
-
-
-            await ctx.Channel.SendMessageAsync(message.Message.Content);
-        }
-        
-        [Command("join")]
-        public async Task Join(CommandContext ctx) {
-            var joinEmbed = new DiscordEmbedBuilder {
-                Title = "Would you like to join?",
-                Color = DiscordColor.Red
-            };
-
-            var joinMessage = await ctx.Channel.SendMessageAsync(embed: joinEmbed).ConfigureAwait(false);
-
-            var thumbsUpEmoji = DiscordEmoji.FromName(ctx.Client, ":+1:");
-            var thumbsDownEmoji = DiscordEmoji.FromName(ctx.Client, ":-1:");
-
-            await joinMessage.CreateReactionAsync(thumbsUpEmoji).ConfigureAwait(false);
-            await joinMessage.CreateReactionAsync(thumbsDownEmoji).ConfigureAwait(false);
-
-            var interactivity = ctx.Client.GetInteractivityModule();
-
-            var reactionResult = await interactivity.WaitForReactionAsync(
-                x => x.Name == thumbsUpEmoji.Name 
-                || x.Name == thumbsDownEmoji.Name
-                ).ConfigureAwait(false);
-
-            await ctx.Channel.SendMessageAsync(reactionResult.Message.Content);
-
-            if (reactionResult.Emoji == thumbsUpEmoji && reactionResult.User.Id == ctx.User.Id){
-                var role = ctx.Guild.GetRole(746698267592622140);
-                await ctx.Channel.SendMessageAsync(ctx.User.Username.ToString() + role);
-                await ctx.Guild.GrantRoleAsync(ctx.Member, role).ConfigureAwait(false);
-            }
-            else if (reactionResult.Emoji == thumbsDownEmoji && reactionResult.User.Id == ctx.User.Id) {
-                var role = ctx.Guild.GetRole(746698295556046868);
-                await ctx.Channel.SendMessageAsync(ctx.User.Username.ToString() + role);
-                await ctx.Guild.GrantRoleAsync(ctx.Member, role).ConfigureAwait(false);
-            }            
-        }
-
-        [Command("copymessage")]
+        [Command("announcement")]
         public async Task CopyMessageToChannel(CommandContext ctx) {
             var interactivity = ctx.Client.GetInteractivityModule();
 
@@ -90,9 +27,9 @@ namespace DiscordBotDSharp.Commands {
             var description = await interactivity.WaitForMessageAsync(x => x.Channel == ctx.Channel && x.Author.Id == ctx.Member.Id).ConfigureAwait(false);
 
             await ctx.Channel.SendMessageAsync("Canal para mensaje");
-            await DisplayChannels(ctx);
+            //await DisplayChannels(ctx);
             var channelName = await interactivity.WaitForMessageAsync(x => x.Channel == ctx.Channel && x.Author.Id == ctx.Member.Id).ConfigureAwait(false);
-            var channel = ctx.Guild.Channels.Where(x => x.Name == channelName.Message.Content.ToString()).First().Id;
+            var channel = ctx.Guild.Channels.Where(x => "<#"+x.Id.ToString()+">" == channelName.Message.Content.ToString()).First().Id;
 
             await ctx.Channel.SendMessageAsync("Color del mensaje");
             await ColorLink(ctx);
